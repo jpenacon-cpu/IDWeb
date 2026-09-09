@@ -41,3 +41,59 @@ address {
   margin-top: 1em;
   padding-top: 1em;
   border-top: thin dotted }
+  /* Tabla hecha con DIVs */
+.responsive-table {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.table-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table-header {
+    background-color: #1a56db;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.table-cell {
+    flex: 1;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table-body .table-row:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Adaptación responsiva para teléfonos móviles */
+@media screen and (max-width: 600px) {
+    .table-header {
+        display: none; /* Oculta el encabezado horizontal en pantallas muy pequeñas */
+    }
+
+    .table-row {
+        flex-direction: column; /* Apila las celdas verticalmente */
+        padding: 10px 0;
+    }
+
+    .table-cell {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 15px;
+    }
+
+    /* Muestra la etiqueta de la columna antes del contenido */
+    .table-cell::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #0f2c59;
+        margin-right: 10px;
+    }
+}
