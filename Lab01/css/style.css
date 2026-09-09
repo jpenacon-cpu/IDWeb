@@ -97,3 +97,56 @@ address {
         margin-right: 10px;
     }
 }
+/* Estilos para el Formulario de Contacto */
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0f2c59;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1a56db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 86, 219, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #1a56db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0f2c59;
+}
