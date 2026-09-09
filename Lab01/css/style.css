@@ -2,8 +2,8 @@ body {
   padding-left: 11em;
   font-family: Georgia, "Times New Roman",
         Times, serif;
-  color: purple;
-  background-color: #d8da3d }
+  color: rgb(6, 34, 51);
+  background-color: #abc0e5 }
 ul.navbar {
   list-style-type: none;
   padding: 0;
@@ -14,18 +14,29 @@ ul.navbar {
   width: 9em }
 h1 {
   font-family: Helvetica, Geneva, Arial,
-        SunSans-Regular, sans-serif }
+        SunSans-Regular, sans-serif;
+  color: #0f2c59;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-left: 6px solid #1a56db;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 1em;
+
+      }
 ul.navbar li {
   background: white;
   margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black }
+  padding: 0.4em 0.6em;
+  border-right: 1em solid #1a56db;
+  border-radius: 4px;
+}
 ul.navbar a {
   text-decoration: none }
 a:link {
-  color: blue }
+  color: #1a56db }
 a:visited {
-  color: purple }
+  color: #0f2c59 }
 address {
   margin-top: 1em;
   padding-top: 1em;
