@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de estudiante</title>
+    <link rel ="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="card-container">
+        <h2>Registro de Nuevos Estudiantes</h2>
+        <form action="/procesar" method="POST" class="form-registro">
+            <fieldset class="form-section">
+                <legend>Información Personal</legend>
+                <div class="form-group">
+                    <label for="codigo">Código de Estudiante:</label>
+                    <input 
+                        type="text" 
+                        id="codigo" 
+                        name="codigo" 
+                        pattern="[0-9]{8}" 
+                        title="Debe ingresar exactamente 8 números"
+                        required 
+                        placeholder="Ej. 20261234"
+                    > 
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input 
+                    type="date" 
+                    id="fechaNacimiento" 
+                    name="fechaNacimiento" 
+                    min="1950-01-01" 
+                    max="2010-12-31" 
+                    required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="carrera">Carrera Profesional:</label>
+                    <select id="carrera" name="carrera" required>
+                    <option value="">-- Seleccione una opción --</option>
+                    <option value="sistemas">Ingeniería de Sistemas</option>
+                    <option value="software">Ingeniería de Software</option>
+                    <option value="industrial">Ingeniería Industrial</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <span class="label-title">Turno:</span>
+                    <div class="radio-options">
+                    <input type="radio" id="turnoManana" name="turno" value="mañana" required>
+                    <label for="turnoManana">Mañana</label>
+
+                    <input type="radio" id="turnoTarde" name="turno" value="tarde">
+                    <label for="turnoTarde">Tarde</label>
+
+                    <input type="radio" id="turnoNoche" name="turno" value="noche">
+                    <label for="turnoNoche">Noche</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-section">
+            <legend>Información de la Cuenta</legend>
+                <div class="form-group">
+                <label for="email">Correo Institucional:</label>
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="usuario@universidad.edu.pe"
+                >
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                pattern="(?=.*\d)(?=.*[A-Z]).{8,}" 
+                title="Debe contener al menos 8 caracteres, una letra mayúscula y un número" 
+                required
+                >
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios Adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escriba aquí sus observaciones..."></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+            </fieldset>
+            <button type="submit" class="btn-submit">Registrar Estudiante</button>
+        </form>
+    </main>
+</body>
+</html>
