@@ -116,6 +116,79 @@
     </div>
 
   </div>
+<!-- Punto 4: Módulo de Noticias y Eventos -->
+<section class="container my-5 py-4">
+  <h2 class="text-center fw-bold text-primary mb-4">Noticias y Eventos Académicos</h2>
+  
+  <div class="row g-4">
+    <!-- Tarjeta 1 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <span class="badge bg-warning text-dark mb-2">Evento</span>
+          <h5 class="card-title fw-bold">Feria de Ciencia y Tecnología 2026</h5>
+          <p class="card-text text-muted">Presentación de proyectos innovadores desarrollados por nuestros estudiantes de ingeniería.</p>
+          <!-- Botón que activa el Modal -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalEvento1">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <span class="badge bg-info text-white mb-2">Noticia</span>
+          <h5 class="card-title fw-bold">Inscripciones Abiertas 2026-I</h5>
+          <p class="card-text text-muted">Apertura del proceso de matrícula académica para el nuevo ciclo universitario.</p>
+          <!-- Botón que activa el Modal -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalEvento2">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ventanas Modales (Bootstrap Modal) -->
+<!-- Modal 1 -->
+<div class="modal fade" id="modalEvento1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal1Label">Feria de Ciencia y Tecnología 2026</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        La feria se llevará a cabo en el campus principal. Habrá ponencias internacionales y demostraciones de proyectos en vivo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modalEvento2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modal2Label">Proceso de Matrícula 2026-I</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Recuerda revisar tus requisitos académicos y pagos pendientes antes del inicio de la fecha de matrícula asignada en tu portal.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 </section>
 </body>
